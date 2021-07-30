@@ -1,5 +1,5 @@
 import React from 'react';
-import './FeaturedMovie.css';
+import './style.css';
 
 export default ({item})=>{
  let description = item.overview;
