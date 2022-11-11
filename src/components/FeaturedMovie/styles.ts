@@ -40,7 +40,8 @@ export const Container = styled.section`
         }
         .actions{
           margin-top: 15px;
-          display: inline-block;
+          display: flex;
+          gap: 10px;
           button{
             font-size: 20px;
             font-weight: bold;
@@ -49,6 +50,13 @@ export const Container = styled.section`
             text-decoration: none;
             margin-right: 10px;
             opacity: 1;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            svg{
+              margin-right: 5px;
+              font-size: 20px;
+            }
             &:hover{
               opacity: .7;
               transition: all ease .2s;

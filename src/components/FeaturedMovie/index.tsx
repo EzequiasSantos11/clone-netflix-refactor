@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AiFillPlayCircle, AiFillInfoCircle } from "react-icons/ai";
 import { TMDBList, TMDBListFilm } from "../../helpers/Interfaces";
 import { getFeatured } from "../../helpers/TMDB/GetGenres";
 import { Loading } from "../Loading";
@@ -54,8 +55,14 @@ export function FeaturedMovie({items}: FeaturedMovieProps){
           <span>{feactured.number_of_seasons} temporada{feactured.number_of_seasons !==1? 's':''}</span>
           <p>{description}</p>
           <div className="actions">
-            <button className="player-button">add</button>
-            <button className="add-button">more</button>
+            <button className="player-button">
+              <AiFillPlayCircle/>
+              Assistir
+            </button>
+            <button className="add-button">
+              <AiFillInfoCircle/>
+              Mais informações
+            </button>
           </div>
           <div className="genres">
             <strong>Generos:</strong>
