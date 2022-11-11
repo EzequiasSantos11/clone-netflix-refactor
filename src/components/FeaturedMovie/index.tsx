@@ -57,7 +57,7 @@ export function FeaturedMovie({items}: FeaturedMovieProps){
           <div className="actions">
             <button className="player-button">
               <AiFillPlayCircle/>
-              Assistir
+              Assistir 
             </button>
             <button className="add-button">
               <AiFillInfoCircle/>
