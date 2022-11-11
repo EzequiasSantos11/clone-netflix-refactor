@@ -40,8 +40,8 @@ export function MovieRow({ items, title }: TMDBList) {
           marginLeft: scrollX,
           width: items.results.length * 150
         }}>
-          {items.results.length > 0 && items.results.map((item, key) => (
-            <div key={key} className="item">
+          {items.results.length > 0 && items.results.map((item) => (
+            <div key={item.id} className="item">
               <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
             </div>
           ))}

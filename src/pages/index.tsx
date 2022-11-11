@@ -49,8 +49,8 @@ export default function Home() {
     <Container>
       <Header black={blackHeader} />
       <FeaturedMovie items={listFilms} />
-      { listFilms.map(item =>(
-        <MovieRow items={item.items} title={item.title} slug={item.slug}/>
+      { listFilms.map((item) =>(
+        <MovieRow key={item.slug} items={item.items} title={item.title} slug={item.slug}/>
       ))}
       <footer>
         Um projeto feito de <span role="img" >🧡</span> por Ezequias Santos<br/>
